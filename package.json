@@ -1,0 +1,19 @@
+{
+  "name": "studytool",
+  "version": "1.0.0",
+  "description": "A helpful desktop application designed to make studying more efficient",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braedenwb/studytool.git"
+  },
+  "author": "braedenwb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/braedenwb/studytool/issues"
+  },
+  "homepage": "https://github.com/braedenwb/studytool#readme"
+}
