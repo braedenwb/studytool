@@ -4,8 +4,8 @@
   "description": "A helpful desktop application designed to make studying more efficient",
   "main": "main.js",
   "scripts": {
-    "start": "electron",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently -k \"npm run electron\" \"cd renderer && npm run dev\"",
+    "electron": "wait-on http://localhost:5173 && electron ."
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/braedenwb/studytool#readme",
   "devDependencies": {
+    "concurrently": "9.1.2",
+    "wait-on": "8.0.3",
     "electron": "^36.2.1"
   }
 }
