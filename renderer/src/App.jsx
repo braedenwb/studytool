@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Layout from './pages/Layout';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div class="text-3x1 font-bold underline">hello</div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Layout />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
