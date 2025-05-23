@@ -12,5 +12,5 @@ export default function Layout()
                 </ul>
             </nav>
         </>
-    )
+    );
 }
